@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video Downloader | Shivam & Saanvi</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            font-family: Arial, sans-serif;
+        }
+
+        .box {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            width: 330px;
+            border-radius: 15px;
+            text-align: center;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(20px);
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            margin-top: 15px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: none;
+            background: white;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:active {
+            transform: scale(0.96);
+        }
+
+        h2 {
+            color: #fff;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #ccc;
+            font-size: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Video Downloader</h2>
+        <p>Paste YouTube / Instagram link below</p>
+
+        <form action="/download" method="POST">
+            <input type="text" name="url" placeholder="Enter video URL..." required />
+            <button type="submit">Download</button>
+        </form>
+
+        <footer>
+            Made By Shivam ❤️ Saanvi
+        </footer>
+    </div>
+</body>
+  </html>
